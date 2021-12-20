@@ -1,0 +1,43 @@
+body {
+  background-color: black;
+  background-image: url(./bg-img.jpg);
+}
+.big-container,
+.company-container {
+  box-shadow: 0px 2px 10px 5px #1abc9c;
+}
+.big-container {
+  width: 70vw;
+}
+li > a {
+  color: black;
+  text-decoration: none;
+}
+.logo {
+  height: 45px;
+  line-height: 3em;
+}
+.marquee {
+  height: 50px;
+  overflow: hidden;
+  position: relative;
+  background: transparent;
+}
+
+.marquee ul {
+  height: 100%;
+  animation: scroll-left 1200000s linear infinite;
+}
+
+.marquee ul li {
+  font-size: 12px;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(130%);
+  }
+  100% {
+    transform: translateX(-10000000%);
+  }
+}
